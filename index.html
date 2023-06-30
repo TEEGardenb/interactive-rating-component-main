@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container" id="containerDisplay">
+      <!-- image-star -->
+      <div class="border-img">
+        <img src="images/icon-star.svg" alt="icon-star" />
+      </div>
+
+      <!-- Rating state start -->
+      <div>
+        <h1 id="ii">Como fue tu experiencia?</h1>
+        <p class="text">
+          Por favor dejanos conocer tu opinion. Todas las calificaciones las
+          apreciamos y nos ayudan a mejorar la calidad!
+        </p>
+      </div>
+      <div class="numbers">
+        <div class="num" id="uno">1</div>
+        <div class="num" id="dos">2</div>
+        <div class="num">3</div>
+        <div class="num">4</div>
+        <di class="num">5</di>
+      </div>
+      <button type="submit" id="submit">ENVIAR</button>
+      <!-- Rating state end -->
+    </div>
+
+    <div class="ContainerThankYou" id="ContainerThankYouDisplay">
+      <img
+        src="images/illustration-thank-you.svg"
+        alt="illustration-thank-you"
+      />
+      <!-- Thank you state start -->
+      <span class="rating"
+        >Seleccionaste <span class="ratingNumber" id="rating_number"></span> de
+        5</span
+      >
+      <!-- Add rating here -->
+      <h2>Gracias!</h2>
+      <p class="text_2">
+        Agradecemos que se tome el tiempo para calificar. si alguna vez
+        necesitas más apoyo, no dude en ponerse en contacto!
+      </p>
+      <!-- Thank you state end -->
+    </div>
+
+    <script src="menu.js"></script>
+  </body>
+</html>

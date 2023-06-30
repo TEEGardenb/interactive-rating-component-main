@@ -1,0 +1,158 @@
+* {
+  margin: 0px;
+  text-decoration: none;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+
+.container {
+  background-color: rgb(31, 38, 48);
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 25px;
+  overflow: hidden;
+  box-sizing: border-box;
+  /*display: none;*/
+}
+
+.border-img {
+  background-color: rgb(38, 47, 56);
+  width: 15px;
+  padding: 15px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.text {
+  color: hsl(216, 12%, 54%);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.num {
+  background-color: rgb(38, 47, 56);
+  color: hsl(216, 12%, 54%);
+  width: 9px;
+
+  display: flex;
+  justify-content: center;
+  padding: 15px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.num:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.active {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+
+button {
+  background-color: hsl(25, 97%, 53%);
+  border: 0px;
+  cursor: pointer;
+  padding: 15px;
+  color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+/*Thank you state*/
+
+.ContainerThankYou {
+  background-color: rgb(31, 38, 48);
+  width: 350px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 25px;
+
+  display: none;
+}
+
+.ContainerThankYou img {
+  width: 160px;
+  margin: auto;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+.rating {
+  background-color: hsl(213, 19%, 18%);
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin: auto;
+
+  color: hsl(25, 97%, 53%);
+}
+
+h2 {
+  margin: auto;
+}
+
+.text_2 {
+  color: hsl(216, 12%, 54%);
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  padding: 0px 7px;
+
+  position: relative;
+  top: -10px;
+}
+
+@media screen and (max-width: 475px) {
+  .container {
+    width: 320px;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  button {
+    width: 250px;
+  }
+}
